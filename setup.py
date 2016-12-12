@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "CSScore",
-    version = "0.1",
+    version = "1.0",
     packages = find_packages('src'),
     package_dir = {'':'src'},
     license = 'MIT',
@@ -11,7 +11,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'CSScore = core.cs_xm:main'
+            'CSI = core.cs_xm:main'
         ]
     }
 )

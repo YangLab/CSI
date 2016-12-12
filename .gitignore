@@ -89,3 +89,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# python install record file
+files.txt
