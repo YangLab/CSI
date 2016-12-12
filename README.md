@@ -5,23 +5,19 @@ capacity of orientation-opposite complementary sequences across circRNA-flanking
 introns.
 
 ## Schema
---------
-![pipeline]()
+![pipeline](https://github.com/YangLab/CSI/blob/master/schema.png)
 
 ## Requirements
---------
 * [blastn](https://www.ncbi.nlm.nih.gov/books/NBK279671/#introduction.Source_tarball) (>=2.2.30+)
 * [pysam](http://pysam.readthedocs.org/en/latest/) (>=0.8.4pre)
 
 ## Installation
---------
 ```bash
 git clone https://github.com/YangLab/CSI
 python ./setup.py install
 ```
 
 ## Usage
---------
 ```
 usage: CSI [-h] [-v] -g GENOME [-l LENGTH] [-p THREAD] [-o OUTPUT] [--tmp]
            circ_file
@@ -65,10 +61,10 @@ CSI -g hg19.fa test_circ.txt -o test_circ_csi -p 10
 | right region| The right pair region                 |
 
 ## Citation
---------
+**Dong R*, Ma XK*, Chen LL# and Yang L#. Increased complexity of circRNA expression during species evolution. RNA Biol, 2016 (Accepted)**
+
 
 ## License
---------
 Copyright (C) 2016 YangLab.
 See the [LICENSE](https://github.com/YangLab/CSI/blob/master/LICENSE)
 file for license rights and limitations (MIT).
