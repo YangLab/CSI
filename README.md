@@ -61,7 +61,7 @@ CSI -g hg19.fa test_circ.txt -o test_circ_csi -p 10
 | right region| The right pair region                 |
 
 ## Citation
-**Dong R*, Ma XK*, Chen LL# and Yang L#. Increased complexity of circRNA expression during species evolution. RNA Biol, 2016 (Accepted)**
+**Dong R\*, Ma XK\*, Chen LL# and Yang L#. Increased complexity of circRNA expression during species evolution. RNA Biol, 2016 (Accepted)**
 
 
 ## License
