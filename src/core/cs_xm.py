@@ -270,8 +270,9 @@ def calCS(faF, circId, leftIntron, rightIntron, length, TMP_FLAG, tmpDir):
     if not TMP_FLAG:
         delete_temp(tempDir)
 
-    return '\t'.join([circId, str(maxScore), str(score1), str(score2),
-                      str(score3), leftRegion, rightRegion])
+    # return '\t'.join([circId, str(maxScore), str(score1), str(score2),
+                      # str(score3), leftRegion, rightRegion])
+    return '\t'.join([circId, str(maxScore), leftRegion, rightRegion])
 
 
 def cs(options):
@@ -295,7 +296,7 @@ def cs(options):
             circType = line.split()[13]
             if circType == 'ciRNA': continue
 
-            leftIntron, rightIntron = line.split()[16].split('|')
+            leftIntron, rightIntron = line.split()[-1].split('|')
             # not first/last exons
             if leftIntron == 'None' or rightIntron == 'None':
                 continue
@@ -345,7 +346,7 @@ def main():
     parser.add_argument('-g', '--genome', dest='genome',
                         help='Genome fasta file.', required=True)
     parser.add_argument('-l', '--length', dest='length', type=int, default=50,
-                        help='Minimum element length. [default: 50]')
+                        help='Minimum pair length. [default: 50]')
     parser.add_argument('-p', '--thread', dest='thread', type=int, default=10,
                         help='Running threads. [default: 10]')
     parser.add_argument('-o', '--ouput', dest='output', default='circ_cs',
