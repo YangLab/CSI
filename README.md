@@ -45,7 +45,7 @@ CSI -g hg19.fa test_circ.txt -o test_circ_csi -p 10
 ```
 
 ### Note
-* circ_file is in the format of output of [CIRcexplorer](https://raw.githubusercontent.com/YangLab/CIRCexplorer)/[CIRCexplorer2](https://raw.githubusercontent.com/YangLab/CIRCexplorer2).
+* circ_file is in the format of output of [CIRcexplorer](https://github.com/YangLab/CIRCexplorer)/[CIRCexplorer2](https://github.com/YangLab/CIRCexplorer2).
 * hg19.fa is genome sequence in FASTA format.
 
 ### Output
